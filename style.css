@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0; /*uporer khali jaygatar jonno*/
+    text-decoration: none; /*niche underline na ashar jonno*/
+}
+
+html{
+    font-size: 10px;
+}
+
+
+/*header section starts*/
+
+.header{
+    padding:20px 110px; /*header r charpashe*/
+    box-shadow:0 30px 24px rgba(0, 0, 0, .1); /*box-shadow:h-offset(right side) v-offset(bellow box) blur color*/
+    display: flex; /*upurer button gulak logo r sathe anar jonno*/
+    justify-content: space-between; /*how the browser distributes space betw
+                                    and around content items along the horizontal-axis of a flex container, and the 
+                                    inline axis of a grid container.*/
+    align-items: center; /*button gulak header r middle e rakhar jonno*/
+}
+
+.header .logo{
+    font-size: 30px;
+    color:black;
+}
+
+.header .logo i{
+    color: #16a085;
+}
+
+.header .navbar a{
+    font-size: 18px;
+    color: gray;
+    margin-left: 10px;
+}
+
+.header .navbar a:hover{
+    color: #16a085;
+}
+
+/*header section end*/
+/*Home section starts*/
+
+.home{
+    display: flex; /*pic r lekha k eksathe ansi*/
+    align-items:center; /*lekha gulak middle e anar jonno*/
+    gap: 24px;  /*row gap*/
+    padding-top: 160px;
+}
+
+.home .image{
+    flex: 550px; /*sets the flexible length on flexible items*/
+}
+
+.home .image img{
+    width: 100%;
+}
+
+.home .content{
+    flex: 300px;  /*sets the flexible length on flexible items*/
+}
+
+.home .content h3{
+    font-size: 34px;
+    color:black;
+    line-height: 1.8; /*2 ta line r moddher height*/
+}
+
+.home .content p{
+    font-size: 20px;
+    color:gray;
+    line-height: 1.8; /*2 ta line r moddher height*/
+}
+
+/*Home section ends*/
+/*icon section starts*/
+
+.icons-container{
+    display: flex; /*shb gula block k eksathe dekhabe*/
+    justify-content: space-evenly; /*shb gula block e same space dibe*/
+    padding-top: 150px;
+    padding-bottom:350px;
+}
+
+.icons-container .icons{
+    box-shadow:0 5px 24px #16a085;/*box-shadow:h-offset(right side) v-offset(bellow box) blur color*/
+    border-radius:8px; /*corner gula circle kore dey*/
+    text-align: center;
+    padding: 40px;
+}
+
+.icons-container .icons i{
+    font-size: 50px;
+    color:#16a085;
+}
+
+.icons-container .icons h3{
+    font-size: 50px;
+    color:black;
+}
+
+.icons-container .icons p{
+    font-size:20px;
+    color:gray;
+}
+
+/*icon section end*/
+/*service section starts*/
+
+.services .box-container{
+    box-shadow:0 5px 24px #16a085;/*box-shadow:h-offset(right side) v-offset(bellow box) blur color*/ ;
+    height: 700px;
+    width: 75%;
+    margin-left: 180px; /*right side e space r jonno*/
+    margin-bottom:200px; /*niche space r jonno*/
+}
+
+.services .box-container h1{
+font-size: 40px;
+padding-top:10px;
+padding-left: 400px;
+}
+
+.services .box-container .box{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.services .box-container .box i{
+    color:#16a085;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.services .box-container .box h3{
+    color: black;
+    font-size: 25px;
+}
+
+.services .box-container .box p{
+    color: gray;
+    font-size: 20px;
+}
+/*service section ends*/
+/*about section starts*/
+
+.about h1{
+    font-size: 55px;
+    padding-top:10px;
+    padding-left: 550px;
+    padding-bottom:50px;
+
+}
+
+.about .row{
+    display:flex; /*pic r lekha eksathe anar jonno*/
+    gap:140px;
+    padding:0 100px ;
+    padding-bottom:200px;
+}
+
+.about .row .content h3{
+    color: black;
+    font-size: 40px;
+}
+
+.about .row .content p{
+    color: gray;
+    padding:10px 0;
+    font-size: 15px;
+}
+
+/*about section ends*/
+/*doctors section starts*/
+
+.doctors h1{
+    font-size: 55px;
+    padding-top:10px;
+    padding-left: 550px;
+    padding-bottom:50px;
+}
+
+.doctors .box-container{
+    display:flex;/*shb gula doctor r part k eksathe anar jonno*/
+    justify-content: space-evenly;/*shb gula r moddhe same space*/
+    padding-bottom: 200px;
+}
+
+.doctors .box-container .box{
+    box-shadow:0 5px 24px #16a085;/*box-shadow:h-offset(right side) v-offset(bellow box) blur color*/ 
+    text-align: center; /*middle e anar jonno lekha gulak*/
+    border-radius:10px;
+}
+
+.doctors .box-container .box img{
+    height:200px;
+    border-radius:10px; /*corner gulak gol korar jonno*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.doctors .box-container .box h3{
+    color:black;
+    font-size: 20px;
+}
+
+.doctors .box-container .box span{
+    color:gray;
+    font-size: 15px;
+}
+
+.doctors .box-container .box .share{
+    padding-top: 8px;
+}
+
+.doctors .box-container .box .share a{
+    height:30px;
+    width:30px;
+    padding-right:10px;
+    font-size:20px;
+    color:#16a085;
+    border-radius:15px;/*corner gulak gol korar jonno*/
+    margin:10px;
+}
+/*doctors section ends*/
+/*book now starts*/
+
+.book h1{
+    font-size: 55px;
+    padding-top:10px;
+    padding-left: 550px;
+    padding-bottom:50px;
+}
+
+.book .row{
+    display: flex; /*pic r form k eksathe ansi*/
+    align-items: center;/*div r moddhe item tak centre e anbe*/
+    gap:50px;
+    padding:80px;
+    padding-bottom:200px;
+}
+ 
+.book .row form{
+    box-shadow:0 5px 24px #16a085;/*box-shadow:h-offset(right side) v-offset(bellow box) blur color*/
+    text-align: center;/*lekha gulak k centre e anbe*/
+    padding: 30px;
+    border-radius:10px;/*corner gulak gol korar jonno*/
+}
+
+.book .row form h3{
+    color:black;
+    padding-bottom:15px;
+    font-size:40px;
+}
+
+.book .row form .box{
+    width: 100%;
+    border-radius:15px;/*corner gulak gol korar jonno*/
+    border:black;
+    font-size: 16px;
+    color: gray;
+    padding:15px ;
+}
+
+.book .row form .btn{
+    padding:10px 40px;
+}
+
+/*book now section ends*/
+/*review section*/
+
+.review h1{
+    font-size: 55px;
+    padding-top:10px;
+    padding-left: 550px;
+    padding-bottom:50px;
+}
+
+.review .box-container{
+    width:80%;
+    margin-left: 140px;
+    padding-bottom: 200px;
+    padding:20px;
+}
+
+.review .box-container .box{
+    box-shadow:0 5px 20px #16a085;/*box-shadow:h-offset(right side) v-offset(bellow box) blur color*/
+    border-radius:10px;/*corner gulak gol korar jonno*/
+    padding:40px;
+    text-align: center;/*lekha gulak k centre e anbe*/
+}
+
+.review .box-container .box img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;/*corner gulak gol korar jonno*/
+}
+
+.review .box-container .box h3{
+    font-size: 30px;
+}
+
+.review .box-container .box .stars i{
+    color:yellow;
+    font-size: 20px;
+}
+
+.review .box-container .box .text{
+    color:gray;
+    font-size: 15px;
+    padding-top:50px;
+}
+
+/*review section ends*/
+/*footer section starts*/
+
+.footer .box-container{
+    display: flex;/*same div e shb gulak eksathe anar jonno*/
+    justify-content: space-evenly;/*div r moddhe space same hbe shb gulay*/
+    padding-bottom: 60px;
+}
+
+.footer .box-container .box h3{
+    font-size: 25px;
+    color:black;
+    padding-top:25px 0;
+}
+
+.footer .box-container .box a{
+    display: block;/*pura row k block kore dibe*/
+    font-size: 15px;
+    color:gray;
+    padding: 5px 0;
+}
+
+.footer .box-container .box a i{
+    padding-right:5px;
+    color: #16a085;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:10px;
+}
+
+.footer .credit{
+    padding: 15px;
+    padding-top:10px;
+    margin-top:10px;
+    text-align: center;/*text k centre e anbe*/
+    font-size: 20px;
+    color:gray;
+    border-top: 3px solid rgba(0, 0, 0, .1);/*size, clr solid,clr */
+}
+
+
+
